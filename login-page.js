@@ -11,7 +11,7 @@ function generateCaptcha() {
     captchaContainer.textContent = captcha;
 }
 
-// Function to validate the form
+// validating the form
 
 function validateForm(event) {
     event.preventDefault();

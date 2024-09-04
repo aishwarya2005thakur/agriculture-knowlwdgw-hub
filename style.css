@@ -23,7 +23,8 @@
 
 
 .navigation-bar a{
-    margin-right: 150px;
+    margin-right: 130px;
+    margin-left:5px;
     justify-content: space-between;
     text-decoration: none;
     
@@ -31,13 +32,13 @@
 
 
 .login-page:hover{
-background-color:#3d5503;
-border:2px solid transparent;
+background-color:#293a02 ;
+border:2px solid ;
 }
 
 
 body{
-    background-color:#3d5503 ;
+    background-color: #2f4202;
 }
 
 /**hero section**/
