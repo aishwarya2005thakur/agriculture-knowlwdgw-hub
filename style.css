@@ -20,12 +20,22 @@
     font-size: 1rem;
    
 }
-a{
-    margin-right: 170px;
-    margin-left: 30px;
-    justify-content: space-evenly;
+
+
+.navigation-bar a{
+    margin-right: 150px;
+    justify-content: space-between;
     text-decoration: none;
+    
 }
+
+
+.login-page:hover{
+background-color:#3d5503;
+border:2px solid transparent;
+}
+
+
 body{
     background-color:#3d5503 ;
 }
@@ -74,3 +84,42 @@ background-color:#e6f8c5;
                 padding-left:10px;
                 
                 }
+
+                /**contact info**/
+
+.info{
+    height: 400px;
+    width: 23%;
+    background-color:#3d5503;}
+   
+   .footer-section {
+       margin-bottom: 15px;
+       transition: background-color 0.3s ease;
+   }
+
+   .footer-section:hover{
+    background-color:#2f4103;
+   }
+   
+   .footer-section h3 {
+       cursor: pointer;
+       
+       margin: 20px;
+   }
+   
+   .hidden {
+       display: none;
+   }
+   
+   .footer-section a {
+       text-decoration: none;
+       margin-top: 5px;
+   }
+
+   .footer-section p{
+       margin-left:40px;
+   }
+   
+   .footer-section a:hover {
+       text-decoration: underline;
+   }

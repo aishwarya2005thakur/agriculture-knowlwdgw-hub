@@ -8,52 +8,87 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
-    <header>
 
     <!--navigation bar-->
 
-
-    <div id="navbar">
+<header>
+<div class= "navigation-bar" id="navbar">
     <a id="logo">Agriculture knowledge Hub</a>
     <a href="#">Our innitiatives</a>
     <a href="#">About us</a>
     <a href="#">my account</a>
-    </div>
-   </header>
+    <i class="fa-solid fa-user" style="color: #f5f5f5;"></i>
+    <a href="http://127.0.0.1:5501/login-page.html">login</a>
+</div>
+</header>
 
     <!---hero section--->
 
 
-<div class="hero-section">
-</div>
+<div class="hero-section"></div>
 
     <!--facilities provided-->
 
 
 <div class="facilities-section">
     <div class="box1 box" > 
-       <h2 style="color:#3d5503">personalised crop monitoring
-
-       </h2>
+        <div class="add-icon">
+            <i class="fa-solid fa-wind" style="color: #3d5503;"></i>
+       <h2 style="color:#3d5503">personalised crop monitoring</h2></div>
        </div>
     <div class="box2 box">
-        <h2 style="color:#3d5503">Bad weather alert system
-
-        </h2>
+        <h2 style="color:#3d5503">Bad weather alert system</h2>
        </div>
     <div class="box3 box"> 
-        <h2 style="color:#3d5503">realtime crop review
-
-        </h2>
+        <h2 style="color:#3d5503">realtime crop review</h2>
     </div>
     <div class="box4 box"> 
-        <h2 style="color:#3d5503">crop health data
+        <h2 style="color:#3d5503">crop health data</h2>
+    </div>
+</div>
 
-        </h2>
+ <!-- Other content of your website -->
+
+   
+<footer>
+    <div class="footer-section" id="social-media">
+        <h3 onclick="toggleVisibility('social-media-content')">Social Media</h3>
+        <div id="social-media-content" class="hidden">
+            <p><a href="#">Facebook</a></p>
+            <p><a href="#">Twitter</a></p>
+            <p><a href="#">Instagram</a></p>
+        </div>
+    </div>
+    
+    <div class="footer-section" id="links">
+        <h3 onclick="toggleVisibility('links-content')">Links</h3>
+        <div id="links-content" class="hidden">
+            <p><a href="#">Home</a></p>
+            <p><a href="#">About Us</a></p>
+            <p><a href="#">Contact</a></p>
+        </div>
     </div>
 
+    <div class="footer-section" id="contact-us">
+        <h3 onclick="toggleVisibility('contact-us-content')">contact us</h3>
+        <div id="contact-us-content" class="hidden">
+            <p>123456789</p>
+            <p>aggriculturekh@gmail.com</p>
+        </div>
+    </div>
 
+    <div class="footer-section" id="address">
+        <h3 onclick="toggleVisibility('address-content')">Our Address</h3>
+        <div id="address-content" class="hidden">
+            <p>National Informatics Centre</p>
+            <p>A4B4, 3rd Floor, A Block</p>
+            <p>CGO Complex, Lodhi Road</p>
+            <p>New Delhi-110003</p>
+        </div>
+    </div>
+</footer>
 
-</div>
+<script src="home-page.js"></script>
+
 </body>
 </html>
