@@ -27,9 +27,15 @@
     margin-left:5px;
     justify-content: space-between;
     text-decoration: none;
+
     
 }
 
+.navigation-bar a:hover{
+    height: 55px;
+    background-color:#2a3905;
+    transition: background-color 0.9s ease; 
+}
 
 .login-page:hover{
 background-color:#293a02 ;
@@ -56,37 +62,87 @@ body{
     background-color: #3d5503;
 }
 
+
 .box{
 border: 2px solid darkgreen ;
-height: 400px;
+height: 80px;
 width: 23%;
 background-color:#e6f8c5;
-
-
+border-radius: 26%;
+text-align: center;
+justify-content: space-between;
+padding-top: 8px;
+}
+            
+.box:hover{
+    height: 110px;
+    width: 25%;
+    background-color:#afcf73;
+    transition: background-color 0.9s ease;
 }
 
 .box1{
     color:#3d5503;
     padding-left:10px;
     
-    }
-    .box2{
-        color:#3d5503;
-        padding-left:10px;
-        
-        }
-        .box3{
-            color:#3d5503;
-            padding-left:10px;
-            
-            }
-            .box4{
-                color:#3d5503;
-                padding-left:10px;
-                
-                }
+}
+.box2{
+    color:#3d5503;
+    padding-left:10px;}
 
-                /**contact info**/
+.box3{
+    color:#3d5503;
+    padding-left:10px;
+            
+}
+.box4{
+    color:#3d5503;
+    padding-left:10px;}
+        
+
+/**additional information on the features**/
+.extra-info{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #3d5503;
+}
+
+ 
+.pannel{
+border: 2px solid darkgreen ;
+height: 400px;
+width: 23%;
+background-color:#e6f8c5;
+border-radius: 8%;
+text-align: center;
+justify-content: space-between;
+padding-top: 8px;
+}
+
+.pannel1{
+    color:#3d5503;
+    padding-left:10px;
+        
+}
+.pannel2{
+    color:#3d5503;
+    padding-left:10px;
+            
+}.pannel:hover{
+    height: 410px;
+    width: 25%;
+    background-color:#afcf73;
+    transition: background-color 0.9s ease;
+}
+
+.pannel3{
+    color:#3d5503;
+    padding-left:10px;
+    
+}
+
+
+/**contact info**/
 
 .info{
     height: 400px;
