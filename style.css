@@ -85,21 +85,32 @@ padding-top: 8px;
 .box1{
     color:#2f4202;
     padding-left:10px;
-    
+    padding-bottom:10px;
+    margin:2%;
 }
+
 .box2{
     color:#2f4202;
-    padding-left:10px;}
+    padding-left:10px;
+    padding-bottom:10px;
+    margin:2%;
+}
 
 .box3{
     color:#2f4202;
     padding-left:10px;
-            
+    padding-bottom:10px;
+    margin:2%;
 }
+
 .box4{
     color:#2f4202;
-    padding-left:10px;}
-        
+    padding-left:10px;
+    padding-bottom:10px;
+    margin:2%;
+
+}
+
 
 /**additional information on the features**/
 
@@ -128,15 +139,21 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 .pannel1{
     color:#3d5503;
     padding-left:10px;
+    padding-bottom:10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 5%;
     margin:5%;
 
         
 }
+.pannel1 img{
+    
+
+}
 .pannel2{
     color:#3d5503;
     padding-left:10px;
+    padding-bottom:10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 5%;
     margin:5%;
@@ -155,13 +172,14 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 .pannel3{
     color:#3d5503;
     padding-left:10px;
+    padding-bottom:10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 5%;
     margin:5%;
     
-
 }
 
+.
 
 /**contact info**/
 
