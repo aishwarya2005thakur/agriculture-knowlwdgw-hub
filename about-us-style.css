@@ -1,0 +1,20 @@
+*{
+    padding:0;
+    margin:0;
+    color:white;
+    border:border-box;
+    background-color:#3d5503  ;
+}
+
+.h1{
+    color:#ffff;
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: start;
+    margin: 5%;
+}
+
+.pre{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+}

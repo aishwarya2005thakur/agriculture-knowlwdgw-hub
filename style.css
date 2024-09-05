@@ -143,13 +143,9 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 5%;
     margin:5%;
-
-        
+      
 }
-.pannel1 img{
-    
 
-}
 .pannel2{
     color:#3d5503;
     padding-left:10px;
@@ -159,7 +155,6 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin:5%;
         
     
-            
 }.pannel:hover{
     height: 410px;
     width: 25%;
@@ -179,7 +174,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
 }
 
-.
+
 
 /**contact info**/
 
