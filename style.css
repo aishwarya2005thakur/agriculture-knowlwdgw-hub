@@ -51,6 +51,7 @@ body{
 
 .hero-section{
     background-image: url("img4.jpeg");
+    position:relative;
     background-size: cover;
     height: 400px;
 }
@@ -59,7 +60,7 @@ body{
 .facilities-section{
     display: flex;
     justify-content: space-evenly;
-    background-color: #3d5503;
+    background-color: #2f4202;
 }
 
 
@@ -75,36 +76,38 @@ padding-top: 8px;
 }
             
 .box:hover{
-    height: 110px;
+    height: 90px;
     width: 25%;
     background-color:#afcf73;
     transition: background-color 0.9s ease;
 }
 
 .box1{
-    color:#3d5503;
+    color:#2f4202;
     padding-left:10px;
     
 }
 .box2{
-    color:#3d5503;
+    color:#2f4202;
     padding-left:10px;}
 
 .box3{
-    color:#3d5503;
+    color:#2f4202;
     padding-left:10px;
             
 }
 .box4{
-    color:#3d5503;
+    color:#2f4202;
     padding-left:10px;}
         
 
 /**additional information on the features**/
+
 .extra-info{
-    display: flex;
+    margin:50px;
+
     justify-content: space-evenly;
-    background-color: #3d5503;
+    background-color:#2f4202 ;
 }
 
  
@@ -117,28 +120,46 @@ border-radius: 8%;
 text-align: center;
 justify-content: space-between;
 padding-top: 8px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
 }
 
 .pannel1{
     color:#3d5503;
     padding-left:10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5%;
+    margin:5%;
+
         
 }
 .pannel2{
     color:#3d5503;
     padding-left:10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5%;
+    margin:5%;
+        
+    
             
 }.pannel:hover{
     height: 410px;
     width: 25%;
     background-color:#afcf73;
     transition: background-color 0.9s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
 }
 
 .pannel3{
     color:#3d5503;
     padding-left:10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5%;
+    margin:5%;
     
+
 }
 
 
@@ -155,7 +176,7 @@ padding-top: 8px;
    }
 
    .footer-section:hover{
-    background-color:#2f4103;
+    background-color:#2f4202;
    }
    
    .footer-section h3 {
