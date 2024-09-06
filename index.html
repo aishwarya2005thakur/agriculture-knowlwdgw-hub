@@ -5,22 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>navigation bar</title>
     <link rel="stylesheet" href="style.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/
+   gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
 
     <!--navigation bar-->
 
-<header>
-<div class= "navigation-bar" id="navbar">
-    <a id="logo">Agriculture knowledge Hub</a>
-    <a href="#">Our innitiatives</a>
-    <a href="http://127.0.0.1:5501/about-us.html">About us</a>
-    <a href="#">my account</a>
-    <i class="fa-solid fa-user" style="color: #f5f5f5;"></i>
-    <a href="http://127.0.0.1:5501/login-page.html">sign in</a>
-</div>
-</header>
+    <header>
+        <div class="navigation-bar" id="navbar">
+            <a id="logo" href="#">
+                <svg width="200" height="50" viewBox="0 0 200 50" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <filter id="wave" x="-50%" y="-50%" width="200%" height="200%">
+                      <feTurbulence type="fractalNoise" baseFrequency="0.01" numOctaves="5" result="noise"/>
+                      <feDisplacementMap in="SourceGraphic" in2="noise" scale="15"/>
+                    </filter>
+                  </defs>
+                  <text x="10" y="40" font-family="'Poppins', sans-serif" font-size="30" fill="#ffffff" filter="url(#wave)">
+                    Agricast
+                  </text>
+                </svg>
+              </a>
+            <nav>
+                <a href="#">Our Initiatives</a>
+                <a href="/about-us.html">About Us</a>
+                <a href="#">My Account</a>
+                <a href="/login-page.html">Sign In</a>
+                <i class="fa-solid fa-user"></i>
+            </nav>
+        </div>
+    </header>
 
     <!---hero section image slider--->
 
@@ -78,6 +96,10 @@
 
 
 </div>
+<div class="animate-on-scroll" data-animation="fade-in">
+    <!-- Content here -->
+</div>
+
 
     <!--facilities provided-->
 
@@ -86,26 +108,26 @@
 
             <div class="box1 box" > 
                 
-                    <h2 style="color:#3d5503"><a href="#">personalised crop monitoring</a></h2>
-                        <i class="fa-solid fa-arrow-right fa-flip-vertical" style="color: #3d5503;"></i>
+                    <h2 style="color:#2F5233"><a href="#">personalised crop monitoring</a></h2>
+                        <i class="fa-solid fa-arrow-right fa-flip-vertical" style="color: 2F5233;"></i>
                
             </div>
             <div class="box2 box">
               
-                    <h2 style="color:#3d5503"><a href="#">Bad weather alert system</a></h2>
-                        <i class="fa-solid fa-arrow-right fa-flip-vertical" style="color: #3d5503;"></i>
+                    <h2 style="color:#2F5233"><a href="#">Bad weather alert system</a></h2>
+                        <i class="fa-solid fa-arrow-right fa-flip-vertical" style="color: 2F52333;"></i>
                
             </div>
             <div class="box3 box"> 
                
-                    <h2 style="color:#3d5503"><a href="#">realtime crop review</a></h2>
-                        <i class="fa-solid fa-arrow-right fa-flip-vertical" style="color: #3d5503;"></i>
+                    <h2 style="color:#2F5233"><a href="#">realtime crop review</a></h2>
+                        <i class="fa-solid fa-arrow-right fa-flip-vertical" style="color: 2F5233;"></i>
                
             </div>
             <div class="box4 box"> 
                
-                    <h2 style="color:#3d5503"><a href="#">crop health data </a></h2>
-                        <i class="fa-solid fa-arrow-right fa-flip-vertical" style="color: #3d5503;"></i>
+                    <h2 style="color:2F5233"><a href="#">crop health data </a></h2>
+                        <i class="fa-solid fa-arrow-right fa-flip-vertical" style="color: 2F5233;"></i>
                
     </div>
 </div>
@@ -120,8 +142,9 @@
     <div class="pannel1 pannel" id="satellite-image">
         
       <p style="padding-top:5%">
-             <h2><b>Real time crop monitoring using satellite imaging</b></h2>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem sunt reprehenderit labore aliquid ad, amet, dolore dignissimos ut enim obcaecati, molestiae atque soluta asperiores quas quasi magnam illo. Aliquid, nam?
+             <h2><b>Real-Time Soil Quality Data</b></h2>
+             Healthy soil is the foundation of productive farming. Monitoring and maintaining the right soil conditions can significantly influence your crop growth and farm consistency. With our soil quality monitoring system, you can track critical parameters in real time, ensuring your soil remains fertile and ready to support healthy plant growth. We give you recommendations on how you can maintain the best quality of soil with minimum use of synthethic fertilizers.
+
          </p>
       
             
@@ -130,8 +153,9 @@
     <div class="pannel2 pannel" id="weather-api">
        
         <p>
-            <h2><b>Weather alert system </b> </h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto repellat dolore, aliquid illo cum adipisci magni iste tempore dignissimos voluptatem, libero necessitatibus eius amet obcaecati, nesciunt corporis esse nam architecto?
+            <h2><b>Localized Weather Forecasts </b> </h2>
+            Receive precise, location-based weather predictions for your farm, customized for the unique conditions affecting your region.
+Critical Weather Warnings: Get immediate push notifications and consistent alerts on approaching storms, temperature fluctuations, or sudden frosts, so you can take the necessary measures to protect your crops
         </p>
      
     </div>
@@ -140,8 +164,8 @@
     <div class="pannel3 pannel " id="crop">
       
         <p>
-            <h2><b>Crop health monitoring </b> </h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto repellat dolore, aliquid illo cum adipisci magni iste tempore dignissimos voluptatem, libero necessitatibus eius amet obcaecati, nesciunt corporis esse nam architecto?
+            <h2><b>Tailored for Your Crops</b> </h2>
+            Weather data is synced with the growth cycles of your specific crops, ensuring that you are always informed about the conditions that matter most at each stage of the growing season.
         </p>
       
      </div>
