@@ -3,26 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="carousal.css">
+    <title>Box Carousel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .carousel-container {
+            width: 80%;
+            max-width: 600px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .carousel {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .box {
+            min-width: 100%;
+            height: 200px;
+            margin: 10px;
+            background-color: #3498db;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 24px;
+            border-radius: 10px;
+        }
+
+        /* Buttons for navigation */
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 50%;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        /* Disable button effect */
+        .disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+        }
+
+    </style>
 </head>
 <body>
-    
 
-<div class="conteudo">
-    <div class="carrousal">
-        <article class="card">
-           <img src="img1.jpeg">
-        </article>
-        <article class="card">
-            <img src="img2.jpeg">
-        </article>
-        <article class="card">
-            <img src="img3.jpeg">
-
-        </article>
+    <div class="carousel-container">
+        <button class="prev" id="prevBtn">&lt;</button>
+        <div class="carousel" id="carousel">
+            <div class="box">Box 1</div>
+            <div class="box">Box 2</div>
+            <div class="box">Box 3</div>
+            <div class="box">Box 4</div>
+        </div>
+        <button class="next" id="nextBtn">&gt;</button>
     </div>
-</div>
+
+    <script>
+        const carousel = document.getElementById('carousel');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+
+        let currentIndex = 0;
+        const totalItems = document.querySelectorAll('.carousel .box').length;
+
+        // Update the carousel position based on currentIndex
+        function updateCarousel() {
+            carousel.style.transform = translateX(-${currentIndex * 100}%);
+
+            // Disable prev button if at the first item
+            if (currentIndex === 0) {
+                prevBtn.classList.add('disabled');
+            } else {
+                prevBtn.classList.remove('disabled');
+            }
+
+            // Disable next button if at the last item
+            if (currentIndex === totalItems - 1) {
+                nextBtn.classList.add('disabled');
+            } else {
+                nextBtn.classList.remove('disabled');
+            }
+        }
+
+        // Go to the next box
+        nextBtn.addEventListener('click', () => {
+            if (currentIndex < totalItems - 1) {
+                currentIndex++;
+                updateCarousel();
+            }
+        });
+
+        // Go to the previous box
+        prevBtn.addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateCarousel();
+            }
+        });
+
+        // Initialize carousel with default position
+        updateCarousel();
+    </script>
 
 </body>
 </html>
