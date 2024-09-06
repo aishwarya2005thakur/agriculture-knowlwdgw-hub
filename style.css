@@ -9,7 +9,7 @@
 
 #navbar{
     background-color: #2e3d09;
-    height: 50px;
+    height: 30px;
     padding:3%;
 
 }
@@ -33,7 +33,7 @@
 }
 
 .navigation-bar a:hover{
-    height: 55px;
+    height: 70px;
     background-color:#2a3905;
     transition: background-color 0.9s ease; 
 }
@@ -50,14 +50,8 @@ body{
 
 /**hero section**/
 
-.hero-section{
-    background-image: url("img4.jpeg");
-    position:relative;
-    background-size: cover;
-    height: 400px;
-}
-
 /**image slider**/
+
 
 .image-container{
  position:relative;
@@ -70,7 +64,7 @@ body{
 
 .image-item{
 min-width:100%;
-transform: translate(-300%);
+transition:transform 0.2s;
 
 }
 
@@ -79,40 +73,50 @@ transform: translate(-300%);
     height:100%;
 }
 
+
+.img-btn-container{
+    position: absolute;
+    top:0;
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+    
+}
+        
+
 .slider-btn{
-border:1px solid transparent;
+border:1px solid black;
 padding:100px 20px;
 font-size:50px;
+
 background-color: transparent;
 color:#293a02;
 
 }
 
+.slider-btn i{
+
+font-weight: 900;
+}
+
 .slider-btn:focus{
-  border-color:#293a02;
-  box-shadow: -2px -2px 2px  #81b521 ,
-  2px 2px 2px  #81b521;
-  margin: 1px;
-
-}
-
-.img-btn-container{
-position: absolute;
-top:0;
-display:flex;
-justify-content:space-between;
-width:100%;
+  border-color: transparent;
+  box-shadow: -10px -10px 10px  black ,
+  10px 10px 10px  whitw;
+  margin: 2px;
 
 }
 
 
 
+/**services offered**/
 
-/**services**/
+
+
 .facilities-section{
-    display: flex;
-  
-    background-color: #2f4202;
+display: flex; 
+background-color: #2f4202;
+
 }
 
 
@@ -165,9 +169,8 @@ padding-top: 80px;
 
 
 
-
-
 /**additional information on the features**/
+
 
 .extra-info{
     margin:50px;
@@ -237,6 +240,8 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 
 /**contact info**/
+
+
 
     .info{
     height: 400px;
