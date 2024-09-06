@@ -19,6 +19,11 @@ body {
     margin: 0 auto;
 }
 
+.required{
+    color:red;
+    font-weight: bold;
+}
+
 
 h2 {
     text-align: center;
