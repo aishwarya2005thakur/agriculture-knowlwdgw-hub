@@ -9,16 +9,16 @@
 <body>
 
     <div class="container">
-        <h2>Register for the Website</h2>
+        <h2>Farmer Registration</h2>
         <form id="registrationForm">
             <label for="username" >Username:</label>
-            <input type="text" id="username" name="username" placeholder="Name" style="border: 2px outset rgb(91, 87, 87)" required><br>
+            <input type="text" id="username" name="username" placeholder=" Enter Name" style="border: 2px outset rgb(91, 87, 87)" required><br>
 
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Enter E-mail" style="border: 2px outset rgb(91, 87, 87)"  required><br>
+            <input type="email" id="email" name="email" placeholder="Enter E-mail ID" style="border: 2px outset rgb(91, 87, 87)"  required><br>
 
             <label for="mobile">Mobile Number:</label>
-            <input type="text" id="mobile" name="mobile" placeholder="mobile number" style="border: 2px outset rgb(91, 87, 87)" required><br>
+            <input type="text" id="mobile" name="mobile" placeholder="Enter Mobile number" style="border: 2px outset rgb(91, 87, 87)" required><br>
 
             <label for="age">Age:</label>
             <input type="number" id="age" name="age" min="1" placeholder="age" style="border: 2px outset rgb(91, 87, 87)" required><br>
@@ -31,6 +31,105 @@
                 <option value="other">Other</option>
             </select><br>
 
+        <label for="state">State/Union Territory:</label>
+        <select id="state" name="state"  style="border: 2px outset rgb(91, 87, 87)" required>
+            <option value="" disabled selected>Select State/UT</option>
+            <option value="andhra_pradesh">Andhra Pradesh</option>
+            <option value="arunachal_pradesh">Arunachal Pradesh</option>
+            <option value="assam">Assam</option>
+            <option value="bihar">Bihar</option>
+            <option value="chhattisgarh">Chhattisgarh</option>
+            <option value="goa">Goa</option>
+            <option value="gujarat">Gujarat</option>
+            <option value="haryana">Haryana</option>
+            <option value="himachal_pradesh">Himachal Pradesh</option>
+            <option value="jharkhand">Jharkhand</option>
+            <option value="karnataka">Karnataka</option>
+            <option value="kerala">Kerala</option>
+            <option value="madhya_pradesh">Madhya Pradesh</option>
+            <option value="maharashtra">Maharashtra</option>
+            <option value="manipur">Manipur</option>
+            <option value="meghalaya">Meghalaya</option>
+            <option value="mizoram">Mizoram</option>
+            <option value="nagaland">Nagaland</option>
+            <option value="odisha">Odisha</option>
+            <option value="punjab">Punjab</option>
+            <option value="rajasthan">Rajasthan</option>
+            <option value="sikkim">Sikkim</option>
+            <option value="tamil_nadu">Tamil Nadu</option>
+            <option value="telangana">Telangana</option>
+            <option value="tripura">Tripura</option>
+            <option value="uttar_pradesh">Uttar Pradesh</option>
+            <option value="uttarakhand">Uttarakhand</option>
+            <option value="west_bengal">West Bengal</option>
+
+            <option value="andaman_nicobar">Andaman and Nicobar Islands</option>
+            <option value="chandigarh">Chandigarh</option>
+            <option value="dadra_nagar_haveli">Dadra and Nagar Haveli and Daman and Diu</option>
+            <option value="delhi">Delhi</option>
+            <option value="lakshadweep">Lakshadweep</option>
+            <option value="puducherry">Puducherry</option>
+            <option value="ladakh">Ladakh</option>
+            <option value="jammu_kashmir">Jammu and Kashmir</option>
+        </select><br>
+
+
+                <label for="qualification">Educational Qualification:</label>
+                <select id="qualification" name="qualification"  style="border: 2px outset rgb(91, 87, 87)" required>
+                    <option value="" disabled selected>Select Qualification</option>
+                    <option value="no_education">No Formal Education</option>
+                    <option value="primary">Primary School (Class 1-5)</option>
+                    <option value="middle_school">Middle School (Class 6-8)</option>
+                    <option value="high_school">High School (Class 9-10)</option>
+                    <option value="higher_secondary">Higher Secondary (Class 11-12)</option>
+                    <option value="diploma">Diploma</option>
+                    <option value="undergraduate">Undergraduate (Bachelor's Degree)</option>
+                    <option value="postgraduate">Postgraduate (Master's Degree)</option>
+                    <option value="doctoral">Doctoral (Ph.D.)</option>
+                    <option value="other">Other</option>
+                </select><br>
+
+        
+        <label for="land_holding">Land Holding:</label>
+        <select id="land_holding" name="land_holding"  style="border: 2px outset rgb(91, 87, 87)" required>
+            <option value="" disabled selected>Select Land Holding</option>
+            <option value="marginal_farm">Marginal Farm (Less than 1 hectare)</option>
+            <option value="small_farm">Small Farm (1 to 2 hectares)</option>
+            <option value="semi_medium_farm">Semi-Medium Farm (2 to 4 hectares)</option>
+            <option value="medium_farm">Medium Farm (4 to 10 hectares)</option>
+            <option value="large_farm">Large Farm (Above 10 hectares)</option>
+        </select>
+
+        
+        <label for="language">Preferred Language:</label>
+        <select id="language" name="language"  style="border: 2px outset rgb(91, 87, 87)" required>
+            <option value="" disabled selected>Select Language</option>
+            <option value="hindi">Hindi</option>
+            <option value="bengali">Bengali</option>
+            <option value="telugu">Telugu</option>
+            <option value="marathi">Marathi</option>
+            <option value="tamil">Tamil</option>
+            <option value="urdu">Urdu</option>
+            <option value="gujarati">Gujarati</option>
+            <option value="malayalam">Malayalam</option>
+            <option value="kannada">Kannada</option>
+            <option value="odia">Odia</option>
+            <option value="punjabi">Punjabi</option>
+            <option value="assamese">Assamese</option>
+            <option value="english">English</option>
+        </select>
+   
+        <div class="radio-group">
+            <label>Mode of SMS:</label>
+            <label><input type="radio" name="mode" value="text_message" required> Text Message</label>
+            <label><input type="radio" name="mode" value="whatsapp" required> whatsapp</label>
+            <label><input type="radio" name="mode" value="voice / call" required> voice/call</label>
+        </div>
+
+        <label for="message">Comments:</label>
+        <textarea id="message" name="message" rows="4" placeholder="Any additional comments"></textarea>
+
+            
             <label for="captcha">Captcha:</label>
             <div id="captcha-container"></div>
             <input type="text" id="captcha-input" name="captcha" placeholder="Enter the captcha" style="border: 2px outset rgb(91, 87, 87)" required><br>
