@@ -39,7 +39,7 @@
 
 .navigation-bar a:hover{
     height: 70px;
-    background-color:#2a3905;
+    background-color:#2F5233;
     transition: background-color 0.9s ease; 
 }
 
@@ -50,7 +50,7 @@ border:2px solid ;
 
 
 body{
-    background-color: #2f4202;
+    background-color: #2F5233;
 }
 
 /**hero section**/
@@ -120,7 +120,7 @@ font-weight: 900;
 
 .facilities-section{
 display: flex; 
-background-color: #2f4202;
+background-color: #2F5233;
 
 }
 
@@ -129,7 +129,7 @@ background-color: #2f4202;
 border: 2px solid darkgreen ;
 height: 200px;
 width: 23%;
-background-color:#e6f8c5;
+background-color:#94C973;
 border-radius: 26%;
 text-align: center;
 justify-content: space-between;
@@ -144,26 +144,26 @@ padding-top: 80px;
 }
 
 .box1{
-    color:#2f4202;
+    color:#2F5233;
     margin:5%;
 }
 
 .box2{
-    color:#2f4202;
+    color:#2F5233;
     padding-left:10px;
     padding-bottom:10px;
     margin:5%;
 }
 
 .box3{
-    color:#2f4202;
+    color:#2F5233;
     padding-left:10px;
     padding-bottom:10px;
     margin:5%;
 }
 
 .box4{
-    color:#2f4202;
+    color:#2F5233;
     padding-left:10px;
     padding-bottom:10px;
     margin:5%;
@@ -180,7 +180,7 @@ padding-top: 80px;
     justify-content: center;
     align-items:left;
     flex-direction:column;
-    background-color:#2f4202 ;
+    background-color:#2F5233 ;
     max-width: 400 px;
 }
 
@@ -220,7 +220,7 @@ padding-top: 80px;
 border: 2px solid darkgreen ;
 height: 400px;
 width: 23%;
-background-color:#e6f8c5;
+background-color:#B1D8B7;
 border-radius: 8%;
 text-align: center;
 justify-content: space-between;
@@ -231,7 +231,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .pannel1{
-    color:#3d5503;
+    color:#2F5233;
     padding-left:10px;
     padding-bottom:10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -241,7 +241,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .pannel2{
-    color:#3d5503;
+    color:#2F5233;
     padding-left:10px;
     padding-bottom:10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -260,7 +260,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .pannel3{
-    color:#3d5503;
+    color:#2F5233;
     padding-left:10px;
     padding-bottom:10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -278,7 +278,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     .info{
     height: 400px;
     width: 23%;
-    background-color:#3d5503;}
+    background-color:#B1D8B7;}
 
     #social-media{
         color:white;
@@ -295,7 +295,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    }
 
    .footer-section:hover{
-    background-color:#2f4202;
+    background-color:#2F5233;
    }
    
    .footer-section h3 {
