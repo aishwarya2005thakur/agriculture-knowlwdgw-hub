@@ -38,15 +38,28 @@
 }
 
 .navigation-bar a:hover{
-    height: 70px;
-    background-color:#2a3905;
-    transition: background-color 0.9s ease; 
+    display: inline-block;
+    position: relative;
+    font-size: 18px;
+    color: #9dc258;
+    cursor:pointer;
 }
 
-.login-page:hover{
-background-color:#293a02 ;
-border:2px solid ;
+.navigation-bar a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: -5px;
+    background-color: #9dc258; 
+    transition: width 0.3s ease; 
 }
+
+.navigation-bar a:hover::after {
+    width: 100%;
+}
+
 
 
 body{
@@ -128,19 +141,36 @@ background-color: #2f4202;
 .box{
 border: 2px solid darkgreen ;
 height: 200px;
-width: 23%;
+width:23%;
 background-color:#e6f8c5;
 border-radius: 26%;
 text-align: center;
 justify-content: space-between;
 padding-top: 80px;
+cursor: pointer;
 }
             
 .box:hover{
     height:210px;
-    width: 23%;
+    width: 25%;
     background-color:#afcf73;
     transition: background-color 0.2s ease;
+}
+
+.box::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    border-radius: 24%;
+    left: 0;
+    bottom: -5px;
+    background-color: #2f4202; 
+    transition: width 0.6s ease; }
+
+
+.box:hover::after {
+    width: 100%;
 }
 
 .box1{
