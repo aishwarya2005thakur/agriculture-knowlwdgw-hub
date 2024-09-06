@@ -10,11 +10,16 @@
 #navbar{
     background-color: #2e3d09;
     height: 30px;
+    width:100%;
+    display: flex;
+    flex-direction: row;
     padding:3%;
+    align-items: center;
 
 }
 #logo{
     text-align:start;
+    padding-left: 30px;
     color: #81b521;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1rem;
@@ -172,19 +177,47 @@ padding-top: 80px;
 /**additional information on the features**/
 
 
-.extra-info{
-    margin:50px;
-
-    justify-content: space-evenly;
+.section-left{
+    padding: 10px 20px;
+    justify-content: center;
+    align-items:left;
+    flex-direction:column;
     background-color:#2f4202 ;
+    max-width: 400 px;
 }
 
-.extra-info h2{
+.section-left h2{
     color:#364906;
     margin:5%;
 }
 
- 
+
+    /**display:block;
+    background-color: aqua;
+    height: 400px;
+    width: 23%;
+  
+    border-radius: 8%;
+    justify-content: space-between;
+    padding-top: 8px;
+    padding-left:10px;
+    padding-bottom:10px;
+    padding: 5%;
+    margin:5%;**/
+
+
+
+
+/**image beside pannel**/
+
+.section-right{
+    width:550px;
+    height:550px;
+    background-image:url("soil.jpeg") ;
+    background-size: cover;
+}
+
+
 .pannel{
 border: 2px solid darkgreen ;
 height: 400px;
@@ -216,6 +249,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 5%;
     margin:5%;
+   
         
     
 }.pannel:hover{
