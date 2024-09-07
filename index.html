@@ -3,6 +3,188 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agri Cast</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Add Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation bar -->
+    <header>
+        <nav class="navigation-bar" id="navbar">
+            <a id="logo" href="#">
+                <span>A</span><span>g</span><span>r</span><span>i</span><span>c</span><span>a</span><span>s</span><span>t</span>
+              </a>
+            <div class="nav-links">
+                <a href="#initiatives">Our Initiatives</a>
+                <a href="about-us.html">About Us</a>
+                <a href="#account">My Account</a>
+                <a href="login-page.html" class="sign-in-btn">
+                    <i class="fa-solid fa-user"></i>
+                    Sign In
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero section image slider -->
+    <div class="hero-section">
+        <div class="image-container">
+            <div class="image-list">
+                <div class="image-item">
+                    <img src="img-slider1.jpeg" alt="image-1">
+                </div>
+                <div class="image-item">
+                    <img src="img-slider2.jpeg" alt="image-2">
+                </div>
+                <div class="image-item">
+                    <img src="img-slider3.jpeg" alt="image-3">
+                </div>
+                <div class="image-item">
+                    <img src="img-slider4.jpeg" alt="image-4">
+                </div>
+                <div class="image-item">
+                    <img src="img-slider5.jpeg" alt="image-5">
+                </div>
+                <div class="image-item">
+                    <img src="img-slider6.jpeg" alt="image-6">
+                </div>
+                <div class="image-item">
+                    <img src="img2.jpeg" alt="image-7">
+                </div>
+                <div class="image-item">
+                    <img src="shutterstock_1484680373.jpg" alt="image-8">
+                </div>
+                <div class="image-item">
+                    <img src="img4.jpeg" alt="image-9">
+                </div>
+                <div class="image-item">
+                    <img src="img5.jpeg" alt="image-10">
+                </div>
+                <div class="image-item">
+                    <img src="satellite.jpeg" alt="image-11">
+                </div>
+                <div class="image-item">
+                    <img src="soil.jpeg" alt="image-12">
+                </div>
+                <div class="image-item">
+                    <img src="weather-alert.jpeg" alt="image-13">
+                </div>
+            </div>
+            <div class="img-btn-container">
+                <button class="slider-btn" id="slide-btn-left"><i class="fa-solid fa-angle-left"></i></button>
+                <button class="slider-btn" id="slide-btn-right"><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Facilities provided -->
+    <div class="facilities-section">
+        <div class="box1 box">
+            <h2><a href="#" style="color:#2f5233">Personalized Crop Monitoring</a></h2>
+            <i class="fa-solid fa-leaf"></i>
+        </div>
+        <div class="box2 box">
+            <h2><a href="#" style="color:#2f5233">Weather Alert System</a></h2>
+            <i class="fa-solid fa-cloud-bolt"></i>
+        </div>
+        <div class="box3 box">
+            <h2><a href="#" style="color:#2f5233">Real-time Crop Review</a></h2>
+            <i class="fa-solid fa-magnifying-glass-chart"></i>
+        </div>
+        <div class="box4 box">
+            <h2><a href="#" style="color:#2f5233">Crop Health Data</a></h2>
+            <i class="fa-solid fa-chart-line"></i>
+        </div>
+    </div>
+
+    <!-- Detailed explanation of services provided -->
+    <section class="services-section">
+        <div class="section-left">
+            <div class="panel" id="satellite-image">
+                <h2>Real-time Crop Monitoring Using Satellite Imaging</h2>
+                <p>Our advanced satellite imaging technology provides up-to-the-minute insights into your crop's health and growth patterns, enabling data-driven decision making for optimal yield.</p>
+            </div>
+            <div class="panel" id="weather-api">
+                <h2>Weather Alert System</h2>
+                <p>Stay ahead of the weather with our state-of-the-art alert system. Receive timely notifications about impending weather conditions that could affect your crops, allowing you to take preemptive action.</p>
+            </div>
+            <div class="panel" id="crop">
+                <h2>Crop Health Monitoring</h2>
+                <p>Our comprehensive crop health monitoring system uses AI and machine learning to detect early signs of disease, pest infestations, or nutrient deficiencies, ensuring your crops remain in peak condition throughout the growing season.</p>
+            </div>
+        </div>
+        <div class="section-right">
+            <img src="satellite.jpeg" alt="Satellite imaging for agriculture" class="feature-image">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-section" id="social-media">
+            <h3 onclick="toggleVisibility('social-media-content')">Social Media</h3>
+            <div id="social-media-content" class="hidden">
+                <p><a href="#" class="footer-link" style="color:aliceblue">Facebook</a></p>
+                <p><a href="#" class="footer-link" style="color:aliceblue">Twitter</a></p>
+                <p><a href="#" class="footer-link" style="color:aliceblue">Instagram</a></p>
+            </div>
+        </div>
+        <hr width="100%" height="2px">
+        
+        <div class="footer-section" id="links">
+            <h3 onclick="toggleVisibility('links-content')">Links</h3>
+            <div id="links-content" class="hidden">
+                <p><a href="http://127.0.0.1:5501/index.html">Home</a></p>
+                <p style="color:white"><a href="http://127.0.0.1:5501/about-us.html">About Us</a></p>
+                <p><a href="#">Innovations</a></p>
+            </div>
+        </div>
+        <hr>
+
+        <div class="footer-section" id="contact-us">
+            <h3 onclick="toggleVisibility('contact-us-content')">contact us</h3>
+            <div id="contact-us-content" class="hidden">
+                <p>123456789</p>
+                <p>aggriculturekh@gmail.com</p>
+            </div>
+        </div>
+        <hr width="100%" height="2px">
+
+        <div class="footer-section" id="address">
+            <h3 onclick="toggleVisibility('address-content')">Our Address</h3>
+            <div id="address-content" class="hidden">
+                <p>National Informatics Centre</p>
+                <p>A4B4, 3rd Floor, A Block</p>
+                <p>CGO Complex, Lodhi Road</p>
+                <p>New Delhi-110003</p>
+            </div>
+        </div>
+        <hr>
+    </footer>
+
+    <script src="home-page.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>navigation bar</title>
     <link rel="stylesheet" href="style.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/
@@ -13,7 +195,7 @@
 </head>
 <body>
 
-    <!--navigation bar-->
+    <!--navigation bar
 
     <header>
         <div class="navigation-bar" id="navbar">
@@ -40,7 +222,7 @@
         </div>
     </header>
 
-    <!---hero section image slider--->
+    <!---hero section image slider
 
 <div class="hero-section">
 <section>
@@ -97,11 +279,12 @@
 
 </div>
 <div class="animate-on-scroll" data-animation="fade-in">
-    <!-- Content here -->
+    <!-- Content here 
 </div>
 
 
     <!--facilities provided-->
+    <!--facilities provided
 
 <main>
 
@@ -135,7 +318,7 @@
 </main>
 
 
-<!--detailet explaination of services provided-->
+<!--detailet explaination of services provided-
 
 <section>
 
@@ -193,7 +376,7 @@ Critical Weather Warnings: Get immediate push notifications and consistent alert
     </div>
 </section>
 
- <!-- Other content of your website -->
+ <!-- Other content of your website -
 
    
 <footer>
@@ -241,4 +424,4 @@ Critical Weather Warnings: Get immediate push notifications and consistent alert
 <script src="home-page.js"></script>
 
 </body>
-</html>
+</html>-->
