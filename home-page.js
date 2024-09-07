@@ -1,3 +1,4 @@
+/*const imageList = document.querySelector('.image-list');
 const slides = document.querySelectorAll('.image-item');
 const totalSlides = slides.length;
 let currentIndex = 0;
