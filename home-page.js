@@ -73,41 +73,7 @@ function toggleVisibility(sectionId) {
  } ) */
 
 
-        // Select the logo element
-const logo = document.getElementById('logo');
-const letters = logo.querySelectorAll('span');
-
-// Function to calculate distance and move letters
-function repelLetters(event) {
-  const mouseX = event.clientX;
-  const mouseY = event.clientY;
-
-  letters.forEach( letter); {
-    const rect = letter.getBoundingClientRect();
-    const letterX = rect.left + rect.width / 2;
-    const letterY = rect.top + rect.height / 2;
-
-    const distanceX = letterX - mouseX;
-    const distanceY = letterY - mouseY;
-    const distance = Math.sqrt(distanceX * distanceX + distanceY * distanceY);}
-
-    // Repelling force (adjust multiplier for more or less movement)
-    const force = Math.min(100 / distance, 10);
-    const moveX = force * distanceX * 0.1; // Adjust the multiplier to control effect strength
-    const moveY = force * distanceY * 0.1;
-
-    letter.style.transform = `translate(${moveX}px, ${moveY}px);` } 
-
-// Reset the position when the mouse leaves the element
-function resetLetters() {
-  letters.forEach(letter => {
-    letter.style.transform = 'translate(0, 0)';
-  });
-}
-
-// Add event listeners for mouse move and mouse leave
-logo.addEventListener('mousemove', repelLetters);
-logo.addEventListener('mouseleave', resetLetters);
+      
 function toggleVisibility(sectionId) {
     var content = document.getElementById(sectionId);
     if (content.style.display === "none" || content.classList.contains('hidden')) {
@@ -181,3 +147,47 @@ document.addEventListener('DOMContentLoaded', function() {
     imageList.addEventListener('mouseenter', () => clearInterval(intervalId));
     imageList.addEventListener('mouseleave', () => intervalId = setInterval(nextImage, 5000));
 });
+
+// Select the logo element
+const logo = document.getElementById('logo');
+const letters = logo.querySelectorAll('span');
+
+// Function to calculate distance and move letters
+function repelLetters(event) {
+  const mouseX = event.clientX;
+  const mouseY = event.clientY;
+
+  letters.forEach(letter => {
+    const rect = letter.getBoundingClientRect();
+    const letterX = rect.left + rect.width / 2;
+    const letterY = rect.top + rect.height / 2;
+
+    const distanceX = letterX - mouseX;
+    const distanceY = letterY - mouseY;
+    const distance = Math.sqrt(distanceX * distanceX + distanceY * distanceY);
+
+    // Repelling force (adjust multiplier for more or less movement)
+    const force = Math.min(100 / distance, 10);
+
+    const moveX = force * distanceX * 0.1; // Adjust the multiplier to control effect strength
+    const moveY = force * distanceY * 0.1;
+
+    letter.style.transform = `translate(${moveX}px, ${moveY}px)`;
+  });
+}
+
+// Reset the position when the mouse leaves the element
+function resetLetters() {
+  letters.forEach(letter => {
+    letter.style.transform = 'translate(0, 0)';
+  });
+}
+
+// Add event listeners for mouse move and mouse leave
+logo.addEventListener('mousemove', repelLetters);
+logo.addEventListener('mouseleave', resetLetters);
+
+const imageList = document.querySelector('.image-list');
+const slides = document.querySelectorAll('.image-item');
+const totalSlides = slides.length;
+let currentIndex = 0;
