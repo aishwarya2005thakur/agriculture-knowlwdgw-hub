@@ -1,3 +1,35 @@
+const imageList = document.querySelector('.image-list');
+const slides = document.querySelectorAll('.image-item');
+const totalSlides = slides.length;
+let currentIndex = 0;
+
+// Function to show the next slide
+function showNextSlide() {
+    currentIndex = (currentIndex + 1) % totalSlides;
+    updateSlidePosition();
+}
+
+// Function to update the slide position
+function updateSlidePosition() {
+    const offset = -currentIndex * 100;
+    imageList.style.transform = `translateX(${offset}%)`;
+}
+
+// Auto slide every 3 seconds
+setInterval(showNextSlide, 3000);
+
+// Optional: Add event listeners for buttons
+document.querySelector('#slide-btn-left').addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+    updateSlidePosition();
+});
+
+document.querySelector('#slide-btn-right').addEventListener('click', () => {
+    showNextSlide();
+});
+
+
+
 
 
 function toggleVisibility(sectionId) {
@@ -39,5 +71,3 @@ function toggleVisibility(sectionId) {
         
 
  } ) 
-
-    
