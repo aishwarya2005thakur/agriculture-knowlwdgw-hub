@@ -36,6 +36,7 @@
 }
 
 
+
 .navigation-bar nav {
     display: flex;
     align-items: center;
@@ -54,6 +55,35 @@
     width: 25px;
     margin: 3px 0;
     transition: 0.3s;
+=======
+.navigation-bar a:hover{
+    display: inline-block;
+    position: relative;
+    font-size: 18px;
+    color: #9dc258;
+    cursor:pointer;
+}
+
+.navigation-bar a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: -5px;
+    background-color: #9dc258; 
+    transition: width 0.3s ease; 
+}
+
+.navigation-bar a:hover::after {
+    width: 100%;
+}
+
+
+
+body{
+    background-color: #2f4202;
+
 }
 
 .menu-btn.active .menu-icon:nth-child(1) {
@@ -224,6 +254,46 @@ body{
 .box a {
     color: #2F5233; /* Ensure link color matches theme */
     text-decoration: none;
+=======
+.box{
+border: 2px solid darkgreen ;
+height: 200px;
+width:23%;
+background-color:#e6f8c5;
+border-radius: 26%;
+text-align: center;
+justify-content: space-between;
+padding-top: 80px;
+cursor: pointer;
+}
+            
+.box:hover{
+    height:210px;
+    width: 25%;
+    background-color:#afcf73;
+    transition: background-color 0.2s ease;
+}
+
+.box::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    border-radius: 24%;
+    left: 0;
+    bottom: -5px;
+    background-color: #2f4202; 
+    transition: width 0.6s ease; }
+
+
+.box:hover::after {
+    width: 100%;
+}
+
+.box1{
+    color:#2f4202;
+    margin:5%;
+
 }
 
 .box a:hover {
