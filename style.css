@@ -17,8 +17,8 @@ body {
 /*navigation bar*/
 
 #navbar {
-    background-color: #2F5233; /* Existing color */
-    height: 80px; /* Adjusted height */
+    background-color: #2F5233; 
+    height: 80px; 
     width: 100%;
     display: flex;
     align-items: center;
@@ -28,17 +28,17 @@ body {
 }
 
 #navbar:hover {
-    background-color: #253d1b; /* Darker shade on hover */
+    background-color: #253d1b; 
 }
 
 #logo {
-    color: #ffffff; /* White color */
+    color: #ffffff; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 2rem; /* Normal font size */
-    margin-right: auto; /* Align logo to the left */
-    text-decoration: none; /* Remove underline */
-    font-weight: bold; /* Make logo text bold */
-    transition: color 0.3s ease; /* Smooth color transition */
+    font-size: 2rem;
+    margin-right: auto; 
+    text-decoration: none; 
+    font-weight: bold; 
+    transition: color 0.3s ease; 
   }
   
   #logo span {
@@ -53,6 +53,7 @@ body {
   }
   
   /* For a more dynamic wave effect */
+
   #logo span:nth-child(odd):hover {
     transform: translateY(5px) rotateZ(-5deg);
   }
@@ -63,47 +64,47 @@ body {
     align-items: center;
 }
 .navigation-bar a {
-    color: #ffffff; /* White color */
+    color: #ffffff; 
     text-decoration: none;
-    margin-left: 25px; /* Adjusted spacing */
-    font-size: 1.2rem; /* Adjusted font size */
+    margin-left: 25px; 
+    font-size: 1.2rem;
     position: relative;
-    padding: 0  px; /* Add padding for underline effect */
-    transition: color 0.3s ease, transform 0.3s ease; /* Smooth color and transform transition */
+    padding: 0  px; 
+    transition: color 0.3s ease, transform 0.3s ease; 
 }
 
 .navigation-bar a::after {
     content: '';
     position: absolute;
     left: 0;
-    bottom: -5px; /* Position the underline below the text */
+    bottom: -5px;
     height: 2px;
     width: 100%;
-    background-color: #a5b648; /* Underline color */
-    transform: scaleX(0); /* Initially hidden */
+    background-color: #a5b648; 
+    transform: scaleX(0); 
     transform-origin: bottom right;
-    transition: transform 0.3s ease; /* Smooth underline transition */
+    transition: transform 0.3s ease;
 }
 
 .navigation-bar a:hover {
-    color: #a5b648; /* Change text color on hover */
-    transform: translateY(-2px); /* Slightly lift text on hover */
+    color: #a5b648; 
+    transform: translateY(-2px); 
 }
 
 .navigation-bar a:hover::after {
-    transform: scaleX(1); /* Show underline on hover */
+    transform: scaleX(1); 
 }
 
 .navigation-bar i {
-    color: #ffffff; /* White color */
+    color: #ffffff; 
     margin-left: 25px;
-    font-size: 1.5rem; /* Adjusted icon size */
-    transition: color 0.3s ease, transform 0.3s ease; /* Smooth color and transform transition */
+    font-size: 1.5rem;
+    transition: color 0.3s ease, transform 0.3s ease; 
 }
 
 .navigation-bar i:hover {
-    color: #a5b648; /* Change color on hover */
-    transform: scale(1.2); /* Slightly larger icon on hover */
+    color: #a5b648; 
+    transform: scale(1.2); 
 }
 
 .navigation-bar {
@@ -143,7 +144,7 @@ body {
         display: none;
     }
     
-    /* Add a mobile menu button here if needed */
+  
 }
 
 body{
@@ -431,18 +432,18 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    }
 
 footer {
-    background-color: #2F5233; /* Dark blue background */
-    color: #ecf0f1; /* Light text color */
+    background-color: #2F5233; 
+    color: #ecf0f1; 
 }
 
 .footer-link {
-    color: #a5b648; /* Bright blue for links */
+    color: #a5b648; 
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .footer-link:hover {
-    color: #a5b648; /* Light green color on hover */
+    color: #a5b648; 
     text-decoration: underline;
 }
 
