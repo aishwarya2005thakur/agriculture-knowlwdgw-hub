@@ -1,5 +1,5 @@
 // Select the logo element
-const logo = document.getElementById('logo');
+/*const logo = document.getElementById('logo');
 const letters = logo.querySelectorAll('span');
 
 // Function to calculate distance and move letters
@@ -106,4 +106,16 @@ document.addEventListener('DOMContentLoaded', function() {
     // Pause auto-scroll on hover
     imageList.addEventListener('mouseenter', () => clearInterval(intervalId));
     imageList.addEventListener('mouseleave', () => intervalId = setInterval(nextImage, 5000));
-});
+});*/
+
+
+      
+function toggleVisibility(sectionId) {
+    var content = document.getElementById(sectionId);
+    if (content.style.display === "none" || content.classList.contains('hidden')) {
+        content.style.display = "block";
+        content.classList.remove('hidden');
+    } else {
+        content.style.display === "none";
+        content.classList.add('hidden');
+    } }

@@ -84,6 +84,8 @@ function toggleVisibility(sectionId) {
         content.classList.add('hidden');
     } }
 
+     // image slider //
+
     let slideBtnleft = document.getElementById("slide-btn-left")
     let slideBtnright = document.getElementById("slide-btn-right")
     let imgItem = document.querySelectorAll(".image-item")
@@ -177,6 +179,7 @@ function repelLetters(event) {
 }
 
 // Reset the position when the mouse leaves the element
+
 function resetLetters() {
   letters.forEach(letter => {
     letter.style.transform = 'translate(0, 0)';
@@ -184,6 +187,7 @@ function resetLetters() {
 }
 
 // Add event listeners for mouse move and mouse leave
+
 logo.addEventListener('mousemove', repelLetters);
 logo.addEventListener('mouseleave', resetLetters);
 
