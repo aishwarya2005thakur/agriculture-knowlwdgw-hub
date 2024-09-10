@@ -8,11 +8,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <header>
+<section class="section1" id="section1">
+       <!-- Navigation bar -->
+
+        <nav class="navigation-bar" id="navbar">
+            <a id="logo" href="#">
+                <span>A</span><span>g</span><span>r</span><span>i</span><span>c</span><span>a</span><span>s</span><span>t</span>
+              </a>
+            <div class="nav-links">
+                <a href="http://127.0.0.1:5503/our-innovations.html">Our Initiatives</a>
+                <a href="about-us.html">About Us</a>
+                <a href="user-page.html">My Account</a>
+                <a href="login-page.html" class="sign-in-btn">
+                    <i class="fa-solid fa-user"></i>
+                    Sign In
+                </a>
+            </div>
+        </nav>
+
+    </section>
 
     <!---user info--->
 
     <div class="user-info" id="user-info">
-    <h1><b> hello! </b></h1>
+    <h1><b> <a id="logo"><span>H</span><span>e</span><span>l</span><span>l</span><span>o</span><span>!</span></a></b></h1>
     <h3><b>Ramesh Singh </b></h3>
     <h5>Soil Quality: PH-5 </h5>
     <h5>Crop sown: barley </h5>
@@ -107,6 +126,54 @@
     <hr width="100%" height="1px">
 </div>
 </main>  
+
+<!-- Footer -->
+
+<section class="section2" id="section2">
+
+<footer>
+    <div class="footer-section" id="social-media">
+        <h3 onclick="toggleVisibility('social-media-content')">Social Media</h3>
+        <div id="social-media-content" class="hidden">
+            <p><a href="#" class="footer-link" style="color:aliceblue">Facebook</a></p>
+            <p><a href="#" class="footer-link" style="color:aliceblue">Twitter</a></p>
+            <p><a href="#" class="footer-link" style="color:aliceblue">Instagram</a></p>
+        </div>
+    </div>
+    <hr width="100%" height="2px">
+    
+    <div class="footer-section" id="links">
+        <h3 onclick="toggleVisibility('links-content')">Links</h3>
+        <div id="links-content" class="hidden">
+            <p><a href="http://127.0.0.1:5501/index.html">Home</a></p>
+            <p style="color:white"><a href="http://127.0.0.1:5501/about-us.html">About Us</a></p>
+            <p><a href="#">Innovations</a></p>
+        </div>
+    </div>
+    <hr>
+
+    <div class="footer-section" id="contact-us">
+        <h3 onclick="toggleVisibility('contact-us-content')">contact us</h3>
+        <div id="contact-us-content" class="hidden">
+            <p>123456789</p>
+            <p>aggriculturekh@gmail.com</p>
+        </div>
+    </div>
+    <hr width="100%" height="2px">
+
+    <div class="footer-section" id="address">
+        <h3 onclick="toggleVisibility('address-content')">Our Address</h3>
+        <div id="address-content" class="hidden">
+            <p>National Informatics Centre</p>
+            <p>A4B4, 3rd Floor, A Block</p>
+            <p>CGO Complex, Lodhi Road</p>
+            <p>New Delhi-110003</p>
+        </div>
+    </div>
+    <hr>
+</footer>
+
+</section>
     
   <script src="user-page.js"></script>
 
