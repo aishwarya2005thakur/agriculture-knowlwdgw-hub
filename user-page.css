@@ -3,23 +3,15 @@
 *{
    
     border:border-box;
-    color:#3d5309;
-    background-color:#afcf73;
+    color:aliceblue;
+    background-color:#253d1b;
 }
 
 /*navigation bar*/
 
-.section1{
-    background-color: #2F5233;
-} 
-.section2{
-    background-color: #2F5233;
-}
-
-
 
 #navbar {
-    background-color: #2F5233; 
+    background-color: #253d1b; 
     height: 80px; 
     width: 100%;
     display: flex;
@@ -82,14 +74,14 @@
     bottom: -5px;
     height: 2px;
     width: 100%;
-    background-color: #a5b648; 
+    background-color: aliceblue; 
     transform: scaleX(0); 
     transform-origin: bottom right;
     transition: transform 0.3s ease;
 }
 
 .navigation-bar a:hover {
-    color: #a5b648; 
+    color: aliceblue; 
     transform: translateY(-2px); 
 }
 
@@ -105,7 +97,7 @@
 }
 
 .navigation-bar i:hover {
-    color: #a5b648; 
+    color: aliceblue; 
     transform: scale(1.2); 
 }
 
@@ -134,11 +126,12 @@
 }
 
 .sign-in-btn:hover {
-    background-color: #8a9a3b;
+    background-color: #69762a;
 }
 
 .sign-in-btn i {
     margin-right: 5px;
+    color:#69762a;
 }
 
 @media (max-width: 768px) {
@@ -183,7 +176,7 @@
   }
 
 .user-info h3{
-    color: #384e04;
+    color: aliceblue;
     font-weight: 700;
     padding:20px ;
     margin:20px ;
@@ -192,7 +185,7 @@
 }
 
 .user-info h5{
-    color: #384e04;
+    color:aliceblue;
     margin-left:35px ;
 
 }
@@ -232,7 +225,14 @@
     cursor:pointer;
 }
 
-footer-section {
+/*for cahnging color of footer section to dark green*/
+
+.footer-div{
+    background-color: #2F5233;
+}
+
+
+.footer-section {
     margin-bottom: 15px;
     color:white;
     transition: background-color 0.3s ease;
@@ -272,13 +272,13 @@ footer {
 }
 
 .footer-link {
- color: #a5b648; 
+ color: #2F5233; 
  text-decoration: none;
  transition: color 0.3s ease;
 }
 
 .footer-link:hover {
- color: #a5b648; 
+ color: #2F5233; 
  text-decoration: underline;
 }
 
