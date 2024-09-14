@@ -30,7 +30,11 @@ The following challenges faced by farmers are addressed through Agri Cast:
 - Limited crop yield despite fertile land.
 - Unpredictable weather changes such as hailstorms, drought, or heavy rainfall.
 - Lack of access to modern farming techniques that are being used in developed countries for better crop management and yield.
-Future Scope
+  
+Future Scope:
+
 In the future, Agri Cast aims to expand into a full-fledged website and mobile application, offering multi-language support to cater to farmers from different regions. We also plan to integrate more IoT devices to provide detailed, personalized data collection and recommendations for each farmer's unique circumstances.
-Sustainability
-As a non-profit organization, Agri Cast aims to collaborate with key government bodies such as Krishi Vigyan Kendra, the Ministry of Agriculture and Farmers' Welfare, and the Indian Council of Agriculture Research (ICAR). Our goal is to empower farmers with actionable insights, modern technologies, and sustainable practices for long-term agricultural success.
+
+Sustainability:
+
+As a non-profit organization, Agri Cast aims to collaborate with key government bodies such as Krishi Vigyan Kendra, the Ministry of Agriculture and Farmers' Welfare, and the Indian Council of Agriculture Research (ICAR). Our goal is to empower farmers with actionable insights, modern technologies, and sustainable practices for long-term agricultural success.Agri Cast - Hackathon Submission
