@@ -1,4 +1,4 @@
-.conteudo{
+/*.conteudo{
     width:450px;
 }
 
@@ -37,4 +37,35 @@
 
 .card:nth-child(even){
     background: linear-gradient(-229deg),#3d5503,#81b521,#afcf73;
-}
+}*/
+
+
+.slider-wrapper{
+    position:relative;
+    max-width: 48rem;
+ 
+ }
+ 
+ .slider{
+     display:flex;
+     aspect-ratio: 16/9;
+     overflow-x: auto;
+     scroll-snap-type: x mandatory ;
+     scroll-behavior: smooth;
+     box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+     border-radius:0.5rem;
+     -webkit-overflow-scrolling: touch;
+ 
+ }
+ 
+ .slider::-webkit-scrollbar{
+     display:none;
+ }
+ 
+ .slider img{
+     flex: 1 0 100%;
+     scroll-snap-align: start;
+ }
+ .content-table{
+     cursor:pointer;
+ }
