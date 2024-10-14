@@ -13,7 +13,7 @@ Tech Stack:
 - Frontend: HTML, CSS, and JavaScript 
  (HTML is used for structuring content, CSS for styling, and JavaScript for adding dynamic elements, intuitive and responsive user interface.)
 - Backend: Flask (a lightweight Python web framework) and SQLAlchemy (an Object-Relational Mapper) handle server-side logic and database management.
-  Flask is responsible for handling HTTP requests and rendering data from the database to the front end, while SQLAlchemy manages the database models, which include user data, weather data, and soil quality information.
+  django is responsible for handling HTTP requests and rendering data from the database to the front end, while SQLAlchemy manages the database models, which include user data, weather data, and soil quality information.
 - API Integrations: The OpenWeatherMap API provides real-time weather data, allowing us to track conditions like rainfall, heatwaves, or storms based on the user's location. A location-based API helps map farmers' geographic locations, improving weather forecasts and soil condition insights specific to their areas.
 
 Features:
